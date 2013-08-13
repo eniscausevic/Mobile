@@ -648,6 +648,7 @@ ul.events_list li img
 .event-content-mini
 {
 border-top: 1px solid #dbd7d8;
+width:102%;
     }
 .event-content-mini-wrapper
 {
@@ -686,7 +687,7 @@ border-top: 1px solid #dbd7d8;
 {
     padding-right: 15px;
     padding-bottom: 20px;
-    float: left;
+    float: right;
 }
 .event-content-mini .event-content-mini-right .event-list-right
 {
@@ -760,7 +761,7 @@ border-top: 1px solid #dbd7d8;
 
     background: #f9f9f5;
     border: 1px solid #dedede;
-    padding: 28px 20px;
+    padding: 28px 20px 0px 0px;
     font-size: 24px;
     line-height: 20px;
     position: relative;
