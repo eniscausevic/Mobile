@@ -505,10 +505,12 @@ ul.events_list li img
         }
 
 .module {
-        padding:0px 32px 32px 32px;
-        background-color: #fff;        
-        background: url('../images/compete_shadow2.png') repeat-x;
-        background-position:left bottom;
+        padding: 0px 32px 5px 32px;
+        background-color: #fff;
+        background: url('../images/bg-module.png') repeat-x;
+        background-position: left bottom;
+        position: relative;
+        z-index: 9999;
 }
 .inner {
          padding: 20px 0px 20px 0px;
@@ -554,13 +556,12 @@ ul.events_list li img
         }
 
 .module {
-        padding: 0px 0px 5px 0px;
+        padding: 0px 32px 5px 32px;
         background-color: #fff;       
         background: url('../images/bg-module.png') repeat-x;
         background-position:left bottom;
         position: relative;
         z-index: 9999;
-        margin: 0px 32px 32px 32px;
 }
 .inner {
          padding: 20px 0px 20px 0px;
@@ -1105,7 +1106,7 @@ ul.hub-page li a
     }
 
     #main-nav-2 #search_form .search_inp {
-        width: 88%;
+        width: 92%;
         height: 60px;
         float: left;
     }
@@ -1166,7 +1167,7 @@ ul.hub-page li a
 }
 @media (max-width: 910px) {
      #main-nav-2 #search_form .search_inp {
-        width: 85%!important;
+        width: 85%;
         height: 60px;
         float: left;
     }
@@ -1182,7 +1183,7 @@ ul.hub-page li a
 }
 @media (max-width: 880px) {
      #main-nav-2 #search_form .search_inp {
-        width: 85%!important;
+        width: 85%;
         height: 60px;
         float: left;
     }
