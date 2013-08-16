@@ -1135,10 +1135,8 @@ ul.hub-page li a
         position: relative;
         z-index: 9999;
         display: inline-block;
-        padding-bottom: 5px;
         max-width: 990px;
         min-height: 1px;
-        max-height: 305px;
     }
 
     #main-nav-2 #search_form .nav_btn {
@@ -1148,6 +1146,7 @@ ul.hub-page li a
         border-radius: 0px;
         display: block;
         margin-right: 0px;
+        margin-top:20px;
     }
 
     #main-nav-2 #search_form .search_inp {
@@ -1155,10 +1154,17 @@ ul.hub-page li a
         height: 60px;
         float: left;
     }
-
+#main-nav-2 .header .logo, .footer .logo {
+        padding: 102px 0px;
+        text-align: center;
+}
     #main-nav-2 .pull-right {
         float: right;
-        margin-right: 18px;
+        top: 0;
+        right: 20px;
+        position: relative;
+        margin-top:10px;
+        margin-right:0px;   
     }
 
     #main-nav-2 .main-nav .row {
@@ -1231,6 +1237,7 @@ ul.hub-page li a
         width: 88%;
         height: 60px;
         float: left;
+        margin-top:20px;
     }
 
 }
@@ -1239,6 +1246,7 @@ ul.hub-page li a
         width: 88%;
         height: 60px;
         float: left;
+        padding-top:15px;
     }
 .slider-h3-yellow {
     position: absolute;
@@ -1402,7 +1410,6 @@ ul.hub-page li a
 }
 #main-nav-2 .header .navigation {
     position: absolute;
-    z-index: 99999;
     width:100%;
 }
 @media (max-width: 460px){ #main-nav-2 #search_form .search_inp {
