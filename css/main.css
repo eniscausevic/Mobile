@@ -503,17 +503,23 @@ ul.events_list li img
             bottom: 11%;
             width: 20%;
         }
-
+}
 .module {
-        padding: 0px 32px 5px 32px;
+        padding: 0px 32px 32px 32px;
         background-color: #fff;
+}
+.border-shadow {
         background: url('../images/bg-module.png') repeat-x;
-        background-position: left bottom;
+        background-position: bottom;
         position: relative;
         z-index: 9999;
+        display: block;
+        padding-bottom: 5px;
+        min-width: 260px;
+        max-width: 990px;
 }
 .inner {
-         padding: 20px 0px 20px 0px;
+         padding: 20px 10px 20px 10px;
          font-size: 33px;   
          border: 1px solid #dedede;
          text-align: center;
@@ -556,15 +562,21 @@ ul.events_list li img
         }
 
 .module {
-        padding: 0px 32px 5px 32px;
+        padding: 0px 32px 32px 32px;
         background-color: #fff;       
+}
+.border-shadow {
         background: url('../images/bg-module.png') repeat-x;
-        background-position:left bottom;
+        background-position: bottom;
         position: relative;
         z-index: 9999;
+        display: block;
+        padding-bottom: 5px;
+        min-width: 260px;
+        max-width: 990px;
 }
 .inner {
-         padding: 20px 0px 20px 0px;
+         padding: 20px 10px 20px 10px;
          font-size: 33px;   
          border: 1px solid #dedede;
          text-align: center;
@@ -607,6 +619,14 @@ ul.events_list li img
             bottom: 11%;
             width: 20%;
  }
+.inner {
+    padding: 20px 10px 20px 10px;
+    font-size: 29px;
+    border: 1px solid #dedede;
+    text-align: center;
+    background: none;
+    background-color: #fff;
+}
 }
 
        @media (max-width: 480px) {
@@ -1074,7 +1094,20 @@ ul.hub-page li a
         width: 100%;
         padding: 0px 30px 0px 15px;
     }
-
+    .module {
+        padding: 0px 32px 32px 32px;
+        background-color: #fff;       
+}
+    .border-shadow {
+    background: url('../images/bg-module.png') repeat-x;
+    background-position: bottom;
+    position: relative;
+    z-index: 9999;
+    display: block;
+    padding-bottom: 5px;
+    min-width: 260px;
+    max-width: 990px;
+}
     .header .navigation, .header .logo, .header .compete_menu {
         padding-left: 15px;
         padding-right: 30px;
@@ -1347,7 +1380,7 @@ margin-top: -25px;
     font-weight: bold;
 }
 .inner {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 10px 20px 10px;
     font-size: 27px;
     border: 1px solid #dedede;
     text-align: center;
