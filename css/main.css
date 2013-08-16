@@ -1040,25 +1040,24 @@ ul.hub-page li a
 {
     margin-top:10px;
     }
-    @media (min-width: 593px) 
+    @media (max-width: 650px) 
     {
-        .event-content-mini .event-content-mini-right {
-        padding-right: 15px;
-        padding-bottom: 20px;
-        float: left;
-        }
         .event-content-mini {
             border-top: 1px solid #dbd7d8;
             width: 106%;
 }
-    }
-    @media (max-width: 511px) 
-    {
+    .event-content-mini .event-content-mini-left
+        {
+            clear:both;
+        }
         .event-content-mini .event-content-mini-right {
         padding-right: 15px;
         padding-bottom: 20px;
         float: left;
         }
+    }
+    @media (max-width: 511px) 
+    {
         .event-content-mini {
             border-top: 1px solid #dbd7d8;
             width: 109%;
@@ -1216,12 +1215,17 @@ ul.hub-page li a
     margin-right: 0px;
 }
  #main-nav-2 ul.events_list li a {
-color: #035bad;
-padding-left: 30px;
+    color: #035bad;
+    padding-left: 30px;
 }
  ul.events_list li {
-font-size: 21px;
-font-weight: bold;
+    font-size: 21px;
+    font-weight: bold;
+}
+ #main-nav-2 .header .compete_menu a img {
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
 }
 }
 @media (max-width: 600px){ #main-nav-2 #search_form .search_inp {
@@ -1236,14 +1240,10 @@ font-weight: bold;
 }
  #main-nav-2 .header .compete_menu a img {
     float: right;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 10px;
 }
- #main-nav-2 .header .compete_menu a img {
-    float: right;
-    padding-top: 12px;
-    padding-right: 10px;
-}
+
  ul.events_list li img {
     float: right;
     margin-top: 1px;

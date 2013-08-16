@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta id="Viewport" name="viewport" width="initial-scale=1.5, target-densitydpi=device-dpi, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+
+    <!--<script src="js/bootstrap.js"></script>-->
+</head>
+<script>
+    var __slidable_images = []; //	Slike koje pripadaju slideru
+    var __active_index;			// 	Index (koja slika u nizu je aktivna)	
+    var sliders_count;			//	Koliko slika postoji koje pripadaju slider-u
+
+    $(document).ready(function () {					//	Ovo se izvrsava kada se ucita sav html/css
+        __slidable_images = $(".slideable");		//	Smjestimo u niz sve slike koje pripadaju slideru (tj koje imaju klasu .slideable)
+        __active_index = 0;							//	znamo da je prva slike aktivna, zato kazemo da je aktivni index 0
+        sliders_count = __slidable_images.length;	//	Sliders count-u kazemo koliko slika ima u nizu __slideable_images
+
+        $(".slideable").swipe({
+            swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                slide_left();
+            },
+            swipeRight: function (event, direction, distance, duration, fingerCount) {
+                slide_right();
+            }
+        });
+    });
+
+    function slide_left() {
+        $(__slidable_images[__active_index]).removeClass('active').addClass('hidden');		//	aktivnoj slici oduzni klasu active i dodaj joj klasu hidden
+
+        if (__active_index - 1 >= 0) {		//	Ako e aktivni index kada se umanji manji veci ili jednak 0 prebaci na prethodnu sliku			
+            $(__slidable_images[__active_index - 1]).addClass('active').removeClass('hidden');  // 	slici sa manjim indexom (koja je sljedeca uljevo) dodaj klasu active a oduzmi klasu hidden
+            __active_index--;	//	Index koji oznacava aktivnu sliku umanji za jedan
+        } else {	// Ako je index 0, tj kada se umanji manji od 0
+            __active_index = sliders_count - 1;
+            $(__slidable_images[__active_index]).addClass('active').removeClass('hidden');  // 	slici sa manjim indexom (koja je sljedeca uljevo) dodaj klasu active a oduzmi klasu hidden
+        }
+
+    }
+
+    function slide_right() {
+        $(__slidable_images[__active_index]).removeClass('active').addClass('hidden');
+
+        if (__active_index + 1 < sliders_count) {
+            $(__slidable_images[__active_index + 1]).addClass('active').removeClass('hidden');
+            __active_index = __active_index + 1;
+        } else {
+            __active_index = 0;
+            $(__slidable_images[__active_index]).addClass('active').removeClass('hidden');
+
+        }
+    }
+</script>
+<body id="main-nav-2">
+    <div class="be_640">
+        <!-- temp width wrapper -->
+        <div class="british_eventing_wrapper">
+            <div class="header">
+                <div class="navigation row">
+                    <div class="pull-left">
+                        <div class="main-nav">
+                            <form id="search_form">
+                                <div class="search_inp">
+                                    <input type="text" value="" onfocus="this.value = ''" onblur="if (this.value == '') this.value='Search...'">
+                                </div>
+                                <a href="#" class="nav_btn search">
+                                    <img src="images/search.png"></a>
+                            </form>
+                        </div>
+                        <div class="row compete_menu font-gotham">
+						<a href="#">COMPETE <img src="images/down_arrow_white.png"></a>
+					</div>
+                 <div class="row left0">
+					<ul class="events_list">
+						<li><a href="#">View All Events<img src="images/arrow_r_light.png" /></a></li>
+						<li><a href="#">Latest Results<img src="images/arrow_r_light.png" /></a></li>
+						<li><a href="#">Enter Events<img src="images/arrow_r_light.png" /></a></li>
+						<li><a href="#">Introduction To Competing<img src="images/arrow_r_light.png" /></a></li>
+						<li><a href="#">Day, Training and Club Passes<img src="images/arrow_r_light.png" /></a></li>
+						<li><a href="#">Season Tickets<img src="images/arrow_r_light.png" /></a></li>
+                        <li><a href="#">Rule Changes<img src="images/arrow_r_light.png" /></a></li>
+                        <li><a href="#">Safety Procedures<img src="images/arrow_r_light.png" /></a></li>
+                        <li><a href="#">Scoring Information<img src="images/arrow_r_light.png" /></a></li>
+                        <li><a href="#">Young Rider Programme<img src="images/arrow_r_light.png" /></a></li>
+                        <li><a href="#">Rankings<img src="images/arrow_r_light.png" /></a></li>
+					</ul>
+				</div>
+                     <div class="row compete_menu font-gotham">
+						<a href="#">DISCOVER <img src="images/right-white-arrow.png"></a>
+					</div>
+                    </div>
+                      <div class="pull-right">
+                           	<div class="more pull-right"><a href="#" class="nav_btn"><img src="images/more_l.png" /></a></div>
+                        </div>
+                    <div class="clear"></div>
+                </div>
+                 <div class="logo row">
+                    <div class="col-12">
+                        <img src="images/british_eventing_logo.png" /></div>
+                </div>
+                <div class="slider row">
+                    <a href="#category" class="slider-h3-yellow">
+                        <h3 style="">COMPETE</h3>
+                        <img src="images/h1-placeholder.png" alt="read more" />
+                    </a>
+                    <a href="#" onclick="slide_left();" class="slide_l"></a>
+                    <a href="#" onclick="slide_right();" class="slide_r"></a>
+                    <img src="images/be_slide1.jpg" class="slideable active" />
+                    <img src="images/be_slide2.jpg" class="slideable hidden" />
+                    <img src="images/be_slide3.jpg" class="slideable hidden" />
+                </div>
+
+            </div>
+            <!-- header -->
+            <div class="row compete_wrapper font-gothamlight">
+                Whether you're a rider, spectator or volunteer, you can experience the thrill and excitement of Eventing.
+            </div>
+            <div class="row padded32">
+                <ul class="events_list">
+                    <li><a href="#">Events Calendar<img src="images/arrow_r_light.png" /></a></li>
+                    <li><a href="#">All Events List<img src="images/arrow_r_light.png" /></a></li>
+                    <li><a href="#">Latest Results<img src="images/arrow_r_light.png" /></a></li>
+                    <li><a href="#">Day Passes<img src="images/arrow_r_light.png" /></a></li>
+                    <li><a href="#">Training and Club Passes<img src="images/arrow_r_light.png" /></a></li>
+                    <li><a href="#">Enter Events<img src="images/arrow_r_light.png" /></a></li>
+                </ul>
+            </div>
+            <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">WHO ARE BRITISH EVENTING?</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+             <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">OUR PEOPLE</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+             <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">FAMILY DAY OUT</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+             <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">ALL EVENTS</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+             <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">ABOUT US</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+             <div class="row module" style="position: relative;">
+                <div class="header inner font-gothamlight ">OUR TRAINING</div>
+                <div class="module-image-area">
+                    <img class="module-img" src="images/module-example.jpg" alt="Example" />
+                    <div class="module-image-area-shadow"></div>
+                </div>
+            </div>
+        </div>
+        <!-- british_eventing_wrapper -->
+        <ul class="quicklinks">
+            <li><a href="#">Discover
+                <img src="images/arrow_r_blue.png" /></a></li>
+            <li><a href="#">Compete
+                <img src="images/arrow_r_blue.png" /></a></li>
+            <li><a href="#">Train
+                <img src="images/arrow_r_blue.png" /></a></li>
+            <li><a href="#">Get Involved
+                <img src="images/arrow_r_blue.png" /></a></li>
+            <li><a href="#">Market Place
+                <img src="images/arrow_r_blue.png" /></a></li>
+            <li><a href="#">Community
+                <img src="images/arrow_r_blue.png" /></a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="other_links">
+            Website:
+				<ul class="website_links">
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />View Full Site</a></li>
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />Accessibility</a></li>
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />Terms</a></li>
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />Privacy</a></li>
+                </ul>
+            <div class="clear" style="margin-bottom: 32px;"></div>
+            My BE:
+				<ul class="website_links">
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />Login</a></li>
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />Register</a></li>
+                    <li><a href="#">
+                        <img src="images/arrow_r_green.png" />My Basket</a></li>
+                </ul>
+            <div class="clear" style="margin-bottom: 32px;"></div>
+            Contact:
+				<ul class="website_links contact_links">
+                    <li class="font-bold">Phone: 0247 669 8856</li>
+                    <li class="font-bold">Fax: 0247 669 7235</li>
+                    <li><a href="#">More contact details</a></li>
+                </ul>
+        </div>
+        <div class="footer">
+            <div class="logo row">
+                <img src="images/british_eventing_logo.png" />
+            </div>
+            <div class="details">
+                <div class="font-bold row">&copy; 2013 British Eventing</div>
+                <div class="row">British Eventing, Stoneleigh Park,</div>
+                <div class="row">Kenilworth, Warwickshire, CV8 2RN</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
