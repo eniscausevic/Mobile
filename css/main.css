@@ -1327,12 +1327,12 @@ ul.hub-page li a
     padding-right: 10px;
 }
  #main-nav-2 .pull-right {
-float: right;
-top: 0;
-right: 15px;
-position: relative;
-margin-top: 10px;
-margin-right: 0px;
+    float: right;
+    top: 0;
+    right: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
 }
 }
 @media (max-width: 600px){ #main-nav-2 #search_form .search_inp {
@@ -1631,7 +1631,7 @@ margin-right: 0px;
     margin-top: 0px;
 }
      ul.events_list li {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 #main-nav-2 .pull-right {
@@ -1669,6 +1669,43 @@ margin-right: 0px;
 }
      ul.events_list li {
     font-size: 11px;
+    font-weight: bold;
+}
+}
+#main-nav-2 .header .navigation {
+    background: #2a90e8;
+    padding: 0px 0;
+}
+#main-nav-2 .pull-left .main-nav {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@media (max-width: 320px){ #main-nav-2 #search_form .search_inp {
+    width: 68%;
+    height: 60px;
+    float: left;
+}
+ #main-nav-2 .pull-left {
+    float: left;
+    width: 80%;
+    margin-right: 0px;
+}
+ .header .compete_menu {
+    color: #fff;
+    font-size: 27px;
+}
+ #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
+    padding-left: 0px;
+    padding-right: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  ul.events_list li img {
+    float: right;
+    margin-top: 0px;
+}
+     ul.events_list li {
+    font-size: 10px;
     font-weight: bold;
 }
 }
