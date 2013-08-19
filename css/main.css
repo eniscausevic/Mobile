@@ -1324,7 +1324,9 @@ ul.hub-page li a
 @-o-viewport {
   width: 640px;
   zoom: 0.5;
+  user-scalable=no
 }
 @viewport{
     width: 640px;
+    user-scalable=no
 }
