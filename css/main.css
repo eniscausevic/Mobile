@@ -1321,3 +1321,7 @@ ul.hub-page li a
     margin-right: 0px;
     margin-left: 0px;
 }
+@-o-viewport {
+  width: 640px;
+  zoom: 0.5;
+}
