@@ -1094,6 +1094,16 @@ ul.hub-page li a
         width: 100%;
         padding: 0px 30px 0px 30px;
     }
+    #main-nav-2 .slider {
+        position: relative;
+        margin-right: 0px;
+        margin-left: 0px;
+}
+    #main-nav-2 .slider .row {
+    
+        margin-right: 0px;
+        margin-left: 0px;
+}
     .module {
         padding: 0px 32px 32px 32px;
         background-color: #fff;       
@@ -1153,6 +1163,7 @@ ul.hub-page li a
         width: 92%;
         height: 60px;
         float: left;
+        margin-top:20px;
     }
 #main-nav-2 .header .logo, .footer .logo {
         padding: 102px 0px;
@@ -1231,6 +1242,14 @@ ul.hub-page li a
     text-decoration: none;
     margin-top: 6px;
 }
+#main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 17px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 }
 @media (max-width: 880px) {
      #main-nav-2 #search_form .search_inp {
@@ -1239,6 +1258,14 @@ ul.hub-page li a
         float: left;
         margin-top:20px;
     }
+     #main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 16px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 
 }
 @media (max-width: 768px) {
@@ -1246,7 +1273,7 @@ ul.hub-page li a
         width: 88%;
         height: 60px;
         float: left;
-        padding-top:15px;
+
     }
 .slider-h3-yellow {
     position: absolute;
@@ -1256,6 +1283,14 @@ ul.hub-page li a
     top: 83%;
     text-decoration: none;
     margin-top:-11px;
+}
+#main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 18px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
 }
 }
 @media (max-width: 690px){ #main-nav-2 #search_form .search_inp {
@@ -1280,6 +1315,14 @@ ul.hub-page li a
     float: right;
     padding-top: 20px;
     padding-right: 10px;
+}
+ #main-nav-2 .pull-right {
+float: right;
+top: 0;
+right: 15px;
+position: relative;
+margin-top: 10px;
+margin-right: 0px;
 }
 }
 @media (max-width: 600px){ #main-nav-2 #search_form .search_inp {
@@ -1365,6 +1408,14 @@ ul.hub-page li a
     font-size: 14px;
     font-weight: bold;
 }
+     #main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 18px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 }
 @media (max-width: 500px){ #main-nav-2 #search_form .search_inp {
     width: 74%;
@@ -1407,6 +1458,14 @@ ul.hub-page li a
     background: none;
     background-color: #fff;
     }
+#main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 }
 #main-nav-2 .header .navigation {
     position: absolute;
@@ -1444,6 +1503,14 @@ ul.hub-page li a
     float: right;
     padding-top: 15px;
     padding-right: 10px;
+}
+     #main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
 }
 }
 @media (max-width: 400px){ #main-nav-2 #search_form .search_inp {
@@ -1483,6 +1550,14 @@ ul.hub-page li a
     padding-top: 10px;
     padding-right: 10px;
 }
+      #main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 7px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 }
 @media (max-width: 380px){ #main-nav-2 #search_form .search_inp {
     width: 70%;
@@ -1512,6 +1587,14 @@ ul.hub-page li a
     font-size: 14px;
     font-weight: bold;
 }
+     #main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 6px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+}
 }
 @media (max-width: 360px){ #main-nav-2 #search_form .search_inp {
     width: 70%;
@@ -1540,6 +1623,14 @@ ul.hub-page li a
      ul.events_list li {
     font-size: 14px;
     font-weight: bold;
+}
+#main-nav-2 .pull-right {
+    float: right;
+    top: 0;
+    right: 6px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
 }
 }
 @media (max-width: 360px){ #main-nav-2 #search_form .search_inp {
