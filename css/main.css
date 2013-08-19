@@ -1325,3 +1325,6 @@ ul.hub-page li a
   width: 640px;
   zoom: 0.5;
 }
+@viewport{
+    width: 640px;
+}
