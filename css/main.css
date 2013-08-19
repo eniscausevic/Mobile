@@ -1225,7 +1225,7 @@ ul.hub-page li a
 
         #main-nav-2 ul.events_list li a {
             color: #035bad;
-            padding-left: 50px;
+            padding-left: 47px;
         }
 .slider-h3-yellow {
     position: absolute;
@@ -1317,8 +1317,12 @@ ul.hub-page li a
     color: #035bad;
     padding-left: 30px;
 }
+ #main-nav-2 .header .compete_menu a {
+    color: #FFF;
+    padding-left: 23px;
+}
  ul.events_list li {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
 }
  #main-nav-2 .header .compete_menu a img {
@@ -1347,7 +1351,7 @@ ul.hub-page li a
 }
  #main-nav-2 .header .compete_menu a img {
     float: right;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 10px;
 }
 
@@ -1389,6 +1393,11 @@ ul.hub-page li a
     text-decoration: none;
     margin-top: -25px;
 }
+ #main-nav-2 .header .compete_menu a img {
+    float: right;
+    padding-top: 14px;
+    padding-right: 10px;
+}
 }
 @media (max-width: 540px){ #main-nav-2 #search_form .search_inp {
     width: 78%;
@@ -1402,7 +1411,7 @@ ul.hub-page li a
 }
  .header .compete_menu {
     color: #fff;
-    font-size: 37px;
+    font-size: 35px;
 }
  #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
     padding-left: 0px;
@@ -1412,7 +1421,7 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -1px;
 }
      ul.events_list li {
     font-size: 14px;
@@ -1425,6 +1434,11 @@ ul.hub-page li a
     position: relative;
     margin-top: 10px;
     margin-right: 0px;
+}
+#main-nav-2 .header .compete_menu a img {
+    float: right;
+    padding-top: 14px;
+    padding-right: 10px;
 }
 }
 @media (max-width: 500px){ #main-nav-2 #search_form .search_inp {
@@ -1441,6 +1455,10 @@ ul.hub-page li a
     color: #fff;
     font-size: 30px;
 }
+ #main-nav-2 .header .compete_menu a {
+    color: #FFF;
+    padding-left: 10px;
+}
  #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
     padding-left: 0px;
     padding-right: 30px;
@@ -1449,15 +1467,15 @@ ul.hub-page li a
 }
  #main-nav-2 ul.events_list li a {
     color: #035bad;
-    padding-left: 20px;
+    padding-left: 12px;
 }
  #main-nav-2 .header .compete_menu a img {
     float: right;
-    padding-top: 10px;
+    padding-top: 11px;
     padding-right: 10px;
 }
       ul.events_list li {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 .inner {
@@ -1476,11 +1494,16 @@ ul.hub-page li a
     margin-top: 10px;
     margin-right: 0px;
 }
-}
 #main-nav-2 .header .navigation {
     position: absolute;
     width:100%;
 }
+ul.events_list li img {
+    float: right;
+    margin-top: -3px;
+}
+}
+
 @media (max-width: 460px){ #main-nav-2 #search_form .search_inp {
     width: 72%;
     height: 60px;
@@ -1493,7 +1516,7 @@ ul.hub-page li a
 }
  .header .compete_menu {
     color: #fff;
-    font-size: 33px;
+    font-size: 30px;
 }
  #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
     padding-left: 0px;
@@ -1503,15 +1526,15 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
      #main-nav-2 .header .compete_menu a img {
     float: right;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 10px;
 }
      #main-nav-2 .pull-right {
@@ -1535,7 +1558,7 @@ ul.hub-page li a
 }
  .header .compete_menu {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
 }
  #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
     padding-left: 0px;
@@ -1545,19 +1568,19 @@ ul.hub-page li a
 }
  #main-nav-2 .header .compete_menu a {
     color: #FFF;
-    padding-left: 23px;
+    padding-left: 10px;
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
       #main-nav-2 .header .compete_menu a img {
     float: right;
-    padding-top: 10px;
+    padding-top: 11px;
     padding-right: 10px;
 }
       #main-nav-2 .pull-right {
@@ -1581,7 +1604,7 @@ ul.hub-page li a
 }
  .header .compete_menu {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
 }
  #main-nav-2 .header .navigation, .header .logo, .header .compete_menu {
     padding-left: 0px;
@@ -1591,10 +1614,10 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
      #main-nav-2 .pull-right {
@@ -1628,7 +1651,7 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
     font-size: 11px;
@@ -1665,7 +1688,7 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
     font-size: 11px;
@@ -1702,7 +1725,7 @@ ul.hub-page li a
 }
   ul.events_list li img {
     float: right;
-    margin-top: 0px;
+    margin-top: -3px;
 }
      ul.events_list li {
     font-size: 10px;
@@ -1712,6 +1735,8 @@ ul.hub-page li a
 #main-nav-2 .header .navigation {
     background: #2a90e8;
     padding: 0px 0;
+    position: absolute;
+    width: 100%;
 }
 #main-nav-2 .pull-left .main-nav {
     padding-left: 0px;
